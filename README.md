@@ -1,8 +1,9 @@
 # Vue Standards
 Formal standards for how Vue projects should be constructed
 
-## Script Section
+## Single File Components
 
+### Script Section
 - Order:
   - name
   - props
