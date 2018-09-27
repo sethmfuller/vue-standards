@@ -1,4 +1,4 @@
-#Vue Standards - Components
+# Vue Standards - Components
 Formal standards for how Vue single-file components should be constructed
 
 ## Script Section
