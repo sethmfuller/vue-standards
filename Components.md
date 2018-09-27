@@ -1,4 +1,4 @@
-# Vue Standards
+# Vue Standards - Components
 Formal standards for how Vue projects should be constructed
 
 ## Single File Components
