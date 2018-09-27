@@ -12,11 +12,11 @@ Formal standards for how Vuex should be constructed and used
         - getters
         - mutations
         - actions
-    - *State*: a single object that contains all application level state and serves as the "single source of truth". Usually you will have only one store for each application. A single state tree makes it straightforward to locate a specific piece of state, and allows us to easily take snapshots of the current app state for debugging purposes.
-    - *Getters*: computed properties for stores. Like computed properties, a getter's result is cached based on its dependencies, and will only re-evaluate when some of its dependencies have changed.
-    - *Mutations*: very similar to events: each mutation has a string type and a handler. The handler function is where we perform actual state modifications, and it will receive the state as the first argument. 
+    - **State**: a single object that contains all application level state and serves as the "single source of truth". Usually you will have only one store for each application. A single state tree makes it straightforward to locate a specific piece of state, and allows us to easily take snapshots of the current app state for debugging purposes.
+    - **Getters**: computed properties for stores. Like computed properties, a getter's result is cached based on its dependencies, and will only re-evaluate when some of its dependencies have changed.
+    - **Mutations**: very similar to events: each mutation has a string type and a handler. The handler function is where we perform actual state modifications, and it will receive the state as the first argument. 
         - You cannot directly call a mutation handler. Think of it more like event registration: "When a mutation with type increment is triggered, call this handler." To invoke a mutation handler, you need to call `store.commit({type: 'mutation-name'});` with its type.
-    - *Actions*: Instead of mutating the state, actions commit mutations. Actions can contain arbitrary asynchronous operations. 
+    - **Actions**: Instead of mutating the state, actions commit mutations. Actions can contain arbitrary asynchronous operations. 
         - Actions are triggered with `store.dispatch('mutation-name');`
         - This may look dumb at first sight: if we want to increment the count, why don't we just call store.commit('increment') directly? Remember that mutations have to be synchronous? Actions don't. We can perform asynchronous operations inside an action.
 - Add the `store` object into the Vue object instantiated in the main.js file.
