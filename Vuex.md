@@ -1,7 +1,7 @@
 # Vue Standards - Vuex
 Formal standards for how Vuex should be constructed and used
 
-## Instantiation
+## Installation and Instantiation
 
 - Install vuex with `npm install vuex`
 - Import vuex with `import Vuex from 'vuex'` in main.js
